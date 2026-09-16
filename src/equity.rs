@@ -1,7 +1,9 @@
+use serde::{Deserialize, Serialize};
 use super::security::Security;
 
 pub const EQUITY: &str = "Equity";
 
+#[derive(Serialize, Deserialize)]
 #[allow(dead_code)]
 pub struct Equity {
     pub ticker: String,

@@ -7,3 +7,5 @@ edition = "2024"
 name = "neko_securities"
 
 [dependencies]
+serde = { version = "1", features = ["derive"] }
+bincode = "1"
