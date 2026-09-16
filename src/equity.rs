@@ -5,6 +5,7 @@ pub const EQUITY: &str = "Equity";
 #[allow(dead_code)]
 pub struct Equity {
     pub ticker: String,
+    pub exchange: String,
 }
 
 impl Security for Equity {
