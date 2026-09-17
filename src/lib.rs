@@ -1,5 +1,6 @@
 pub mod currency;
 pub mod proto;
+mod stock_persisted;
 mod security;
 mod cash;
 mod stock;
