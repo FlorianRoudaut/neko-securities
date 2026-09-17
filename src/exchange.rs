@@ -1,5 +1,4 @@
-use super::persisted::Persisted;
-use super::key::Key;
+use neko_tech_persistence::{Key, Persisted};
 
 pub const EXCHANGE: &str = "Exchange";
 

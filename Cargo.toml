@@ -11,6 +11,7 @@ serde = { version = "1", features = ["derive"] }
 uuid = { version = "1", features = ["v4", "serde"] }
 bincode = "1"
 prost = "0.13"
+neko-tech-persistence = { path = "../neko-tech-persistence/neko-tech-persistence" }
 
 [build-dependencies]
 prost-build = "0.13"

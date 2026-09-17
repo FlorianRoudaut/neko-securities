@@ -1,5 +1,6 @@
 use uuid::Uuid;
-use crate::{Stock, Key};
+use crate::Stock;
+use neko_tech_persistence::Key;
 
 mod generated {
     include!(concat!(env!("OUT_DIR"), "/neko.rs"));
