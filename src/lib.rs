@@ -8,5 +8,5 @@ mod position;
 pub use security::Security;
 pub use cash::{Cash, CASH};
 #[allow(unused_imports)]
-pub use equity::{Equity, EQUITY};
+pub use equity::{Stock, STOCK};
 pub use position::Position;
