@@ -1,16 +1,20 @@
 use serde::{Deserialize, Serialize};
 use super::security::Security;
+use super::persisted::Persisted;
+use super::key::Key;
 
 pub const STOCK: &str = "Stock";
 
 #[derive(Serialize, Deserialize)]
-#[allow(dead_code)]
 pub struct Stock {
+    pub key: Key,
     pub ticker: String,
     pub exchange: String,
 }
 
-impl Security for Stock {
-    fn name(&self) -> &str { &self.ticker }
-    fn security_type(&self) -> &str { STOCK }
+impl Persisted for Stock {
+    fn key(&self) -> &Key { &self.key }
+    fn persisted_type(&self) -> &str { STOCK }
 }
+
+impl Security for Stock {}
