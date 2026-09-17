@@ -9,7 +9,7 @@ pub const STOCK: &str = "Stock";
 pub struct Stock {
     pub key: Key,
     pub ticker: String,
-    pub exchange: String,
+    pub exchange_ids: Vec<String>,
 }
 
 impl Persisted for Stock {
