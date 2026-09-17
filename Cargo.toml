@@ -9,7 +9,6 @@ name = "neko_securities"
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 uuid = { version = "1", features = ["v4", "serde"] }
-bincode = "1"
 prost = "0.13"
 neko-tech-persistence = { git = "https://github.com/FlorianRoudaut/neko-tech-persistence.git", branch = "main" }
 

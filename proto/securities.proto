@@ -21,3 +21,20 @@ message Stock {
 message StockList {
     repeated Stock stocks = 1;
 }
+
+message Cash {
+    Key key = 1;
+}
+
+message CashList {
+    repeated Cash cashes = 1;
+}
+
+message Exchange {
+    Key key = 1;
+    string name = 2;
+}
+
+message ExchangeList {
+    repeated Exchange exchanges = 1;
+}
