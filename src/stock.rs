@@ -5,7 +5,7 @@ use super::key::Key;
 
 pub const STOCK: &str = "Stock";
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Default)]
 pub struct Stock {
     pub key: Key,
     pub name: String,
