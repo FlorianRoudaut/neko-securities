@@ -1,4 +1,5 @@
 pub mod currency;
+pub mod proto;
 mod security;
 mod key;
 mod persisted;
