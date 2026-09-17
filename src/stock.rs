@@ -8,7 +8,11 @@ pub const STOCK: &str = "Stock";
 #[derive(Serialize, Deserialize)]
 pub struct Stock {
     pub key: Key,
-    pub ticker: String,
+    pub name: String,
+    pub bbg_id: String,
+    pub cusip: String,
+    pub isin: String,
+    pub ibkr_contract_id: String,
     pub exchange_ids: Vec<String>,
 }
 
