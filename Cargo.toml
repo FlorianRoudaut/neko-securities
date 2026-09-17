@@ -11,7 +11,10 @@ serde = { version = "1", features = ["derive"] }
 uuid = { version = "1", features = ["v4", "serde"] }
 bincode = "1"
 prost = "0.13"
-neko-tech-persistence = { path = "../neko-tech-persistence" }
+neko-tech-persistence = { git = "https://github.com/FlorianRoudaut/neko-tech-persistence.git", branch = "main" }
+
+[patch."https://github.com/FlorianRoudaut/neko-tech-persistence.git"]
+neko-tech-persistence = { path = "../neko-tech-persistence/" }
 
 [build-dependencies]
 prost-build = "0.13"
