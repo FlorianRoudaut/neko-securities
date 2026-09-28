@@ -11,7 +11,7 @@ pub struct Stock {
     pub bbg_id: String,
     pub cusip: String,
     pub isin: String,
-    pub ibkr_contract_id: String,
+    pub ibkr_contract_id: u64,
     pub exchange_ids: Vec<String>,
 }
 

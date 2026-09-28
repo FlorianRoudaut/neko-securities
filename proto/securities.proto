@@ -14,7 +14,7 @@ message Stock {
     string bbg_id = 3;
     string cusip = 4;
     string isin = 5;
-    string ibkr_contract_id = 6;
+    uint64 ibkr_contract_id = 6;
     repeated string exchange_ids = 7;
 }
 
